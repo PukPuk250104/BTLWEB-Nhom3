@@ -1,0 +1,85 @@
+/* thanhtoan/thanhtoan.css */
+.checkout-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: 30px auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* CỘT TRÁI */
+.billing-details {
+    width: 55%;
+}
+.billing-details h3, .order-summary h3 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* CỘT PHẢI */
+.order-summary {
+    width: 40%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    height: fit-content;
+}
+.order-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    font-weight: bold;
+    font-size: 16px;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+}
+.payment-methods {
+    margin-top: 20px;
+    font-size: 14px;
+}
+.btn-order {
+    width: 100%;
+    padding: 15px;
+    background-color: #d93025;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+.btn-order:hover {
+    background-color: #b02117;
+}

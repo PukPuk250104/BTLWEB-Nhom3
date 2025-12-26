@@ -1,0 +1,127 @@
+
+/* 1. KHUNG TỔNG THỂ */
+main {
+    background-color: #f9f9f9;
+    width: 100%;
+    min-height: 750px; /* Tăng chiều cao lên chút để thoải mái */
+    display: flex;
+    justify-content: center; /* Căn giữa màn hình */
+    padding-top: 35px;
+    
+}
+
+.form_login {
+    display: flex;
+    background: white;
+    width: 80%;
+    max-width: 1100px; /* Giới hạn chiều rộng cho đẹp */
+    height: auto;
+    
+    /* Tăng khoảng cách này lên để đẩy form tụt xuống dưới menu */
+    margin-top: 150px; 
+    
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    justify-content: space-between;
+}
+
+/* 2. CỘT ĐĂNG NHẬP (Bên trái) */
+.dang_nhap {
+    width: 46%; /* Giảm từ 48% xuống để có chỗ hở */
+    
+    /* --- SỬA 2: Xử lý đường kẻ giữa --- */
+    border-right: 1px solid #e0e0e0; 
+    padding-right: 40px; /* Đẩy nội dung cách xa đường kẻ bên phải */
+    margin-left: 0; /* Bỏ margin cũ đi */
+}
+
+/* 3. CỘT ĐĂNG KÝ (Bên phải) */
+.dang_ky {
+    width: 46%;
+    padding-left: 40px; /* Đẩy nội dung cách xa đường kẻ bên trái */
+}
+
+/* 4. CÁC PHẦN TỬ BÊN TRONG */
+.col h2 {
+    margin: 0 0 20px 0; /* Tăng khoảng cách dưới tiêu đề */
+    font-size: 24px;
+    color: #003366;
+    text-align: center; /* Căn giữa tiêu đề cho đẹp */
+    text-transform: uppercase;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Ô nhập liệu */
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+input[type="date"] {
+    width: 100%;
+    padding: 12px 15px; /* Tăng padding để ô nhập cao thoáng hơn */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Tăng khoảng cách giữa các ô */
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #003366; /* Đổi màu viền khi bấm vào */
+}
+
+/* Checkbox */
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Nút bấm */
+.login-actions {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn {
+    display: block;
+    width: 40%; /* Để nút dài full 100% nhìn hiện đại hơn */
+    padding: 12px;
+    background: #111;     
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #333;
+}
+
+.forgot {
+    display: block;
+    margin-top: 15px;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: left; /* Căn giữa link quên mật khẩu */
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
