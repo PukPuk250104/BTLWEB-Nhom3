@@ -1,0 +1,62 @@
+/* THIẾT LẬP CHUNG */
+* {
+    box-sizing: border-box; /* Giữ kích thước chuẩn khi có viền */
+    margin: 0; padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.khung-ngoai {
+    max-width: 1100px;
+    margin: 40px auto; /* Căn giữa trang web */
+    padding: 0 20px;
+}
+
+/* CHIA CỘT CHÍNH (FLEXBOX) */
+.bo-cuc-chinh {
+    display: flex;
+    gap: 30px; /* Khoảng cách giữa 2 cột */
+}
+
+.cot-trai { flex: 2; } /* Chiếm 2/3 bề rộng */
+.cot-phai { 
+    flex: 1; 
+    border: 1px solid #ddd; 
+    padding: 20px; 
+    height: fit-content; 
+}
+
+/* CHI TIẾT DÒNG SẢN PHẨM */
+.thanh-tieu-de, .dong-san-pham {
+    display: flex;
+    align-items: center; /* Thẳng hàng ngang */
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.thanh-tieu-de { border-bottom: 2px solid black; font-weight: bold; }
+
+.cot-ten { flex: 3; display: flex; align-items: center; gap: 10px; }
+.cot-gia, .cot-so-luong, .cot-tam-tinh { flex: 1; text-align: center; }
+
+.anh-san-pham { width: 70px; border: 1px solid #eee; }
+.link-san-pham { text-decoration: none; color: #337ab7; font-size: 14px; }
+
+/* CÁC NÚT BẤM */
+.nhom-nut-bam { display: flex; gap: 10px; margin-top: 20px; }
+.nut-bam { padding: 10px 15px; cursor: pointer; font-weight: bold; border: 1px solid #333; }
+.nut-cap-nhat { background: #888; color: white; border: none; }
+
+.nut-thanh-toan {
+    width: 100%;
+    background: #e74c3c;
+    color: white;
+    padding: 15px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* THÔNG TIN TỔNG CỘNG */
+.dong-thong-tin { display: flex; justify-content: space-between; margin-bottom: 10px; }
+.tong-cong { border-top: 1px solid #eee; padding-top: 15px; font-weight: bold; font-size: 18px; }

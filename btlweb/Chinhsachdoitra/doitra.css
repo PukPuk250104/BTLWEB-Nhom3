@@ -1,0 +1,40 @@
+body{
+    background-color:white ;
+}
+
+
+/* START: CSS THÊM CHO NỘI DUNG CHÍNH SÁCH ĐỔI TRẢ */
+main ul, main ol {
+    margin-left: 50px; 
+    padding: 0;
+    list-style-type: disc; /* Để ul có dấu chấm */
+}
+main ol {
+    list-style-type: decimal; /* Để ol có số thứ tự */
+}
+main ul li, main ol li {
+    margin-bottom: 10px;
+    text-align: left;
+}
+main h3 {
+    text-align: left;
+    color: #003366;
+    margin-top: 25px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+    color: #003366;
+    font-weight: bold;
+}
+/* END: CSS THÊM CHO NỘI DUNG CHÍNH SÁCH ĐỔI TRẢ */
+
